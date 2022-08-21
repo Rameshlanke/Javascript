@@ -1,0 +1,36 @@
+
+<!-- Classic Style click event -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Style click event</title>
+</head>
+<body bgcolor="#cdebf6" leftmargin="200" topmargin="100"></body>
+<body>
+    <h1>Classic Style Click Event in Javascript</h1>
+    <hr>
+    <input type="text" id="Textbox1"><br><br>
+    <input type="button" value="Click Here" onclick="fun1()">
+    <span id="red"> Display Result Here:</span>
+
+    <script>
+        //fucntion defination
+        function fun1() {
+        
+            
+            var txt = document.getElementById("Textbox1");
+            var s = txt.value;
+            var msg = "The value which you entered is: "+s;
+            var sp = document.getElementById("red");
+            sp.innerHTML = msg;
+        }
+       
+
+        
+
+    </script>
+</body>
+</html>
